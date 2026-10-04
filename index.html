@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FinVoice Guardian | Financial Safety</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <div class="logo-box">
+            F
+        </div>
+
+        <div class="logo-text">
+
+            <strong>
+                FinVoice
+            </strong>
+
+            <span>
+                Guardian
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#how-it-works">
+            How it works
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+    </nav>
+
+
+    <select
+        id="languageSelect"
+        onchange="changeLanguage()"
+    >
+
+        <option value="en">
+            English
+        </option>
+
+        <option value="te">
+            తెలుగు
+        </option>
+
+        <option value="hi">
+            हिंदी
+        </option>
+
+    </select>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="hero-left">
+
+
+        <div class="badge">
+
+            <span>
+                ●
+            </span>
+
+            Financial Safety Assistant
+
+        </div>
+
+
+        <h1>
+
+            Understand your
+
+            <span>
+                financial information.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            FinVoice helps you understand financial terms,
+            identify warning signs in messages, and check
+            financial claims — before you act.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+
+            <button
+                class="primary-btn"
+                onclick="openLearning()"
+            >
+
+                Start learning
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+            <button
+                class="secondary-btn"
+                onclick="openMessageChecker()"
+            >
+
+                Check a message
+
+            </button>
+
+
+        </div>
+
+
+        <div class="hero-languages">
+
+            <span>
+                Available in
+            </span>
+
+            <strong>
+                English
+            </strong>
+
+            <strong>
+                తెలుగు
+            </strong>
+
+            <strong>
+                हिंदी
+            </strong>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PRODUCT PREVIEW
+    ====================================================== -->
+
+    <div class="product-preview">
+
+
+        <div class="preview-header">
+
+
+            <div class="preview-brand">
+
+
+                <div class="preview-icon">
+                    F
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        FinVoice
+                    </strong>
+
+                    <span>
+                        Financial Safety Assistant
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <span class="online">
+
+                ● Online
+
+            </span>
+
+        </div>
+
+
+
+        <div class="preview-divider"></div>
+
+
+
+        <div class="user-question">
+
+            <span>
+                YOU
+            </span>
+
+            <p>
+                What is inflation?
+            </p>
+
+        </div>
+
+
+
+        <div class="ai-answer">
+
+
+            <div class="ai-title">
+
+                <div class="small-icon">
+                    F
+                </div>
+
+                <div>
+
+                    <strong>
+                        FinVoice
+                    </strong>
+
+                    <span>
+                        Financial explanation
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <h3>
+                Inflation
+            </h3>
+
+
+            <p>
+
+                Inflation means the prices of goods and
+                services increase over time. This can reduce
+                what the same amount of money can buy.
+
+            </p>
+
+
+            <div class="simple-example">
+
+                <span>
+                    EXAMPLE
+                </span>
+
+                <p>
+
+                    A product costing ₹100 today may cost
+                    ₹110 later if prices increase by 10%.
+
+                </p>
+
+            </div>
+
+
+            <div class="answer-actions">
+
+                <button
+                    onclick="playVoice(
+                        'Inflation means the prices of goods and services increase over time.'
+                    )"
+                >
+
+                    Listen
+
+                </button>
+
+                <span>
+                    Simple explanation
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="preview-input">
+
+            <span>
+                Ask about a financial term...
+            </span>
+
+            <button
+                onclick="openLearning()"
+            >
+                →
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TRUST STRIP
+========================================================= -->
+
+<section class="trust-strip">
+
+
+    <div>
+
+        <strong>
+            Learn
+        </strong>
+
+        <span>
+            Understand financial concepts
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <strong>
+            Check
+        </strong>
+
+        <span>
+            Identify potential warning signs
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <strong>
+            Verify
+        </strong>
+
+        <span>
+            Know what to check before acting
+        </span>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     LEARN FINANCE
+========================================================= -->
+
+<section
+    class="learning-section"
+    id="learn"
+>
+
+
+    <div class="section-heading center">
+
+
+        <span class="section-label">
+            LEARN FINANCE
+        </span>
+
+
+        <h2>
+
+            Understand money
+            <br>
+            in simple words.
+
+        </h2>
+
+
+        <p>
+
+            Ask about a financial concept and
+            FinVoice will explain it in clear,
+            simple language.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="learning-card">
+
+
+        <div class="learning-input-area">
+
+
+            <label for="financeQuestion">
+
+                What would you like to understand?
+
+            </label>
+
+
+            <div class="finance-input-row">
+
+
+                <input
+                    type="text"
+                    id="financeQuestion"
+                    placeholder="Example: What is inflation?"
+                    onkeydown="handleEnter(event)"
+                >
+
+
+                <button
+                    class="primary-btn"
+                    onclick="askFinanceQuestion()"
+                >
+
+                    Explain
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="suggested-questions">
+
+
+            <span>
+                Try asking:
+            </span>
+
+
+            <button
+                onclick="askSuggested('What is inflation?')"
+            >
+                What is inflation?
+            </button>
+
+
+            <button
+                onclick="askSuggested('What is compound interest?')"
+            >
+                What is compound interest?
+            </button>
+
+
+            <button
+                onclick="askSuggested('What is a mutual fund?')"
+            >
+                What is a mutual fund?
+            </button>
+
+
+            <button
+                onclick="askSuggested('What is a scam?')"
+            >
+                What is a scam?
+            </button>
+
+
+        </div>
+
+
+
+        <div
+            id="financeAnswer"
+            class="finance-answer"
+        >
+
+
+            <div class="answer-placeholder">
+
+                <div class="placeholder-icon">
+                    F
+                </div>
+
+                <h3>
+                    Your explanation will appear here
+                </h3>
+
+                <p>
+                    Ask a financial question to get started.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CHECK A MESSAGE
+========================================================= -->
+
+<section
+    class="message-section"
+    id="message-checker"
+>
+
+
+    <div class="section-heading center">
+
+
+        <span class="section-label">
+            CHECK A MESSAGE
+        </span>
+
+
+        <h2>
+
+            Check financial messages
+            <br>
+            before you act.
+
+        </h2>
+
+
+        <p>
+
+            Paste a financial message and FinVoice
+            will identify potential warning signs
+            and explain what to verify.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="message-card">
+
+
+        <label for="messageInput">
+
+            Paste the message you received
+
+        </label>
+
+
+        <textarea
+            id="messageInput"
+            placeholder="Example: Invest ₹5,000 today and get guaranteed 30% returns. Contact us immediately!"
+        ></textarea>
+
+
+
+        <div class="message-actions">
+
+
+            <button
+                class="primary-btn"
+                onclick="analyzeMessage()"
+            >
+
+                Analyze message →
+
+            </button>
+
+
+            <button
+                class="sample-btn"
+                onclick="loadSampleMessage()"
+            >
+
+                Try an example
+
+            </button>
+
+
+        </div>
+
+
+
+        <div
+            id="messageResult"
+            class="message-result"
+        >
+
+
+            <div class="empty-message">
+
+
+                <div class="message-icon">
+                    !
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Check before you act
+                    </h3>
+
+                    <p>
+
+                        Warning signs and verification
+                        steps will appear here.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CHECK A CLAIM
+========================================================= -->
+
+<section
+    class="claim-section"
+    id="claim-checker"
+>
+
+
+    <div class="section-heading center">
+
+
+        <span class="section-label">
+            CHECK A CLAIM
+        </span>
+
+
+        <h2>
+
+            Understand financial claims
+            <br>
+            before you trust them.
+
+        </h2>
+
+
+        <p>
+
+            Enter a financial claim and learn what
+            evidence, source, date and context
+            should be checked.
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="claim-card">
+
+
+        <label for="claimInput">
+
+            Enter the financial claim
+
+        </label>
+
+
+        <textarea
+            id="claimInput"
+            placeholder="Example: This investment gives guaranteed 30% returns every year."
+        ></textarea>
+
+
+        <div class="claim-actions">
+
+
+            <button
+                class="primary-btn"
+                onclick="analyzeClaim()"
+            >
+
+                Check this claim →
+
+            </button>
+
+
+        </div>
+
+
+
+        <div
+            id="claimResult"
+            class="claim-result"
+        >
+
+
+            <div class="empty-result">
+
+
+                <span>
+                    ?
+                </span>
+
+
+                <div>
+
+
+                    <strong>
+                        Verify before trusting
+                    </strong>
+
+
+                    <p>
+
+                        Enter a financial claim to see
+                        what you should verify.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINVOICE TOOLS
+     MOVED HERE — BEFORE HOW IT WORKS
+========================================================= -->
+
+<section
+    class="features-section"
+    id="features"
+>
+
+
+    <div class="section-heading">
+
+
+        <span class="section-label">
+            FINVOICE TOOLS
+        </span>
+
+
+        <h2>
+
+            One place to understand
+            <br>
+            financial information.
+
+        </h2>
+
+
+        <p>
+
+            Simple tools designed for everyday financial
+            information and digital messages.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="feature-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="feature-card">
+
+
+            <div class="feature-top">
+
+
+                <div class="feature-number">
+                    01
+                </div>
+
+
+                <div class="feature-symbol">
+                    ?
+                </div>
+
+
+            </div>
+
+
+            <h3>
+                Learn Finance
+            </h3>
+
+
+            <p>
+
+                Get simple explanations for financial
+                terms and concepts.
+
+            </p>
+
+
+            <button
+                onclick="openLearning()"
+            >
+
+                Learn a concept →
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- CARD 2 -->
+
+        <div class="feature-card">
+
+
+            <div class="feature-top">
+
+
+                <div class="feature-number">
+                    02
+                </div>
+
+
+                <div class="feature-symbol">
+                    !
+                </div>
+
+
+            </div>
+
+
+            <h3>
+                Check a Message
+            </h3>
+
+
+            <p>
+
+                Find potential warning signs in
+                suspicious financial messages.
+
+            </p>
+
+
+            <button
+                onclick="openMessageChecker()"
+            >
+
+                Check a message →
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- CARD 3 -->
+
+        <div class="feature-card">
+
+
+            <div class="feature-top">
+
+
+                <div class="feature-number">
+                    03
+                </div>
+
+
+                <div class="feature-symbol">
+                    ✓
+                </div>
+
+
+            </div>
+
+
+            <h3>
+                Check a Claim
+            </h3>
+
+
+            <p>
+
+                Understand financial claims and learn
+                what information needs verification.
+
+            </p>
+
+
+            <button
+                onclick="openClaimChecker()"
+            >
+
+                Check a claim →
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section
+    class="how-section"
+    id="how-it-works"
+>
+
+
+    <div class="section-heading center">
+
+
+        <span class="section-label">
+            HOW IT WORKS
+        </span>
+
+
+        <h2>
+            Understand before you act.
+        </h2>
+
+
+        <p>
+
+            FinVoice turns complicated financial
+            information into clear, understandable guidance.
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="steps">
+
+
+        <div class="step">
+
+
+            <div class="step-number">
+                01
+            </div>
+
+
+            <h3>
+                Ask or Share
+            </h3>
+
+
+            <p>
+
+                Ask a question or share financial
+                information you want to understand.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="step-line"></div>
+
+
+
+        <div class="step">
+
+
+            <div class="step-number">
+                02
+            </div>
+
+
+            <h3>
+                Understand
+            </h3>
+
+
+            <p>
+
+                FinVoice explains the information
+                in simple language.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="step-line"></div>
+
+
+
+        <div class="step">
+
+
+            <div class="step-number">
+                03
+            </div>
+
+
+            <h3>
+                Verify
+            </h3>
+
+
+            <p>
+
+                Learn what warning signs to look for
+                and what should be independently checked.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section
+    class="about-section"
+    id="about"
+>
+
+
+    <div class="about-box">
+
+
+        <div class="about-title">
+
+
+            <span class="section-label">
+                OUR PRINCIPLE
+            </span>
+
+
+            <h2>
+
+                Information should be
+                <span>understandable.</span>
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="about-content">
+
+
+            <p>
+
+                Financial information can be difficult
+                to understand, especially when it comes
+                through social media, messaging apps,
+                or unfamiliar terminology.
+
+            </p>
+
+
+            <p>
+
+                FinVoice focuses on helping users
+                understand information and recognize
+                warning signs — without making
+                investment decisions for them.
+
+            </p>
+
+
+            <div class="principles">
+
+
+                <span>
+                    ✓ Education-first
+                </span>
+
+
+                <span>
+                    ✓ Privacy-focused
+                </span>
+
+
+                <span>
+                    ✓ Clear explanations
+                </span>
+
+
+                <span>
+                    ✓ No investment recommendations
+                </span>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- ================= PRIVACY & SAFETY ================= -->
+
+<section class="safety-section" id="safety">
+
+    <div class="safety-container">
+
+        <div class="section-heading center">
+            <span class="section-label">SAFETY & PRIVACY</span>
+
+            <h2>
+                Your financial safety comes first.
+            </h2>
+
+            <p>
+                FinVoice is designed to help you understand financial
+                information and identify possible warning signs before
+                you take action.
+            </p>
+        </div>
+
+        <div class="safety-grid">
+
+            <div class="safety-card">
+                <div class="safety-icon">🛡</div>
+
+                <h3>Educational, not financial advice</h3>
+
+                <p>
+                    FinVoice does not recommend specific investments,
+                    predict market outcomes, or guarantee financial returns.
+                </p>
+            </div>
+
+
+            <div class="safety-card">
+                <div class="safety-icon">🔒</div>
+
+                <h3>Protect sensitive information</h3>
+
+                <p>
+                    Never share your OTP, PIN, password, CVV, or other
+                    sensitive financial information through messages or
+                    untrusted links.
+                </p>
+            </div>
+
+
+            <div class="safety-card">
+                <div class="safety-icon">✓</div>
+
+                <h3>Verify before you act</h3>
+
+                <p>
+                    Always verify financial claims through trusted,
+                    official sources before making payments or investments.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="safety-disclaimer">
+            <strong>Important:</strong>
+            FinVoice is an educational and safety-support tool.
+            It does not provide investment advice or guarantee financial
+            outcomes. Always verify information independently before
+            taking financial action.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+    <div class="footer-brand">
+
+
+        <div class="logo-box">
+            F
+        </div>
+
+
+        <div>
+
+
+            <strong>
+                FinVoice Guardian
+            </strong>
+
+
+            <span>
+                Financial awareness and safety
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <p>
+        Understand. Check. Verify.
+    </p>
+
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
